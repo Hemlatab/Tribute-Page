@@ -1,12 +1,12 @@
 .bg-1{
     background-color: white;
     color:#474e5d;
+    padding-bottom: 5px;
 }
 .img-circle{
     width: 400px;
     height:400px;
-    box-shadow: 5px 5px;
-    
+    box-shadow: 5px 5px; 
 }
 .title{
     color:#337ab7;
@@ -34,12 +34,14 @@
     border-radius: 0;
     margin-bottom: 0;
     font-size: 12px;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
   }
   .navbar-header{
       color: #337ab7;
   }
-  
+  .navbar-brand{
+    color: hsl(208, 56%, 46%);
+  }
    .navbar-nav li a{
     color: #337ab7;
   }
@@ -51,9 +53,12 @@
     font: 20px, Lato;
     line-height: 1.8;
     color: #f5f6f7;
+    background-color: white;
   }
   
-  p {font-size: 16px;}
+  p {
+      font-size: 16px;
+    }
 
   .bg-5 { 
     background-color: #2f2f2f;
