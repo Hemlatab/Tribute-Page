@@ -12,6 +12,9 @@
 .title{
     color:#337ab7;
 }
+.title-bio{
+    color: white;
+}
 .bg-2{
     background-color: #474e5d;
     color: #ffffff;
@@ -34,7 +37,7 @@
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 4px;
   }
   .navbar-header{
@@ -51,7 +54,8 @@
   }
 
   body {
-    font: 20px, Lato;
+    font: 20px;
+    font-family: Roboto, Arial;
     line-height: 1.8;
     color: #f5f6f7;
     background-color: white;
