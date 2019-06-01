@@ -11,6 +11,7 @@
     <title>Tribute Page</title>
 </head>
 <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
         <nav class="navbar navbar-default">
                 <div class="container">
                   <div class="navbar-header">
@@ -19,25 +20,25 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span> 
                     </button>
-                    <a class="navbar-brand" href="#home">Steve Jobs</a>
+                   <a class="navbar-brand" href="#home">Steve Jobs</a>
                   </div>
                   <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
-                      <li><a href="#"><a href="#who">WHO</a></li>
-                      <li><a href="#" ><a href="#bibliograghy">Biography</a></li>
-                      <li><a href="#"><a href="#inventions">Inventions</a></li>
+                      <li><a href="#who">WHO</a></li>
+                      <li><a href="#bibliograghy">Biography</a></li>
+                      <li><a href="#inventions">Inventions</a></li>
                     </ul>
                   </div>
                 </div>
               </nav>
     <div class="container-fluid bg-1 text-center">
-        <h3 class="title"><a name="#who">Who I am</a></h3>
+        <h3 class="title" id="who">Who I am</a></h3>
         <img src="images/stevejobs.png" class="img-circle" alt="Steve">
         <h3 class="title">Inventor</h3>
     </div>
 
     <div class="container-fluid bg-2 text-center">
-        <h3 class="title"><a name="bibliograghy">Biography</a></h3>
+        <h3 class="title-bio" id="bibliograghy">Biography</a></h3>
         <p>In 1976, when Jobs was just 21, he and Steve Wozniak started Apple Computer in the Jobs’ family garage. They funded their entrepreneurial venture by Jobs selling his Volkswagen bus and Wozniak selling his beloved scientific calculator. Steve Jobs co-founded Apple Computers with Steve Wozniak. Under Jobs' guidance, the company pioneered a series of revolutionary technologies, including the iPhone and iPad.</p>
     </div>
 
@@ -83,6 +84,25 @@
         <p>Made with <span class="icon-heart">&#9829;</span> by <a href="https://hemlatab.github.io/freecodecampproj1/"
             target="_blank" class="github-link">Hemlata Bhundhoo</a></p>
       </footer>
+      <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+              } else {
+                document.getElementById("myBtn").style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+            
 
 </body>
 </html>
